@@ -1,11 +1,12 @@
 document.getElementById('btn-deposit').addEventListener('click', function(){
+    
     const depositInput = document.getElementById('deposit-input');
     const depositAmount = depositInput.value;
     const totalDepositAmount = parseFloat(depositAmount);
 
     const depositeBalance = document.getElementById('deposite-balance');
-    const totalBalance = depositeBalance.innerText;
-    const totalBalanceAmount = parseFloat(totalBalance);
+    const totalDepositBalance = depositeBalance.innerText;
+    const totalBalanceAmount = parseFloat(totalDepositBalance);
 
     const stockBalance = document.getElementById('stock-balance')
     const totalStock = stockBalance.innerText;
@@ -18,7 +19,5 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     depositeBalance.innerText = currentDeposit;
     stockBalance.innerText = remainStockBalance;
     
-
-    // console.log();
     depositInput.value = '';
 })
