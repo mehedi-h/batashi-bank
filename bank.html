@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batashi Bank Ltd.</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="md:mt-16">
+        <h1 class="text-xl md:text-5xl font-normal md:font-bold text-center md:py-10"><span class="text-blue-500 md:font-extrabold">Batashi</span> Bank Ltd.</h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 mx-auto w-9/12 py-2 md:py-5 text-white">
+
+            <div class="bg-green-400 rounded-md py-2 md:py-4 px-2 md:px-6">
+                <h1 class="text-sm md:text-xl font-normal md:font-semibold">
+                    Deposite
+                </h1>
+                <h3 class="text-lg md:text-5xl font-light md:font-normal md:py-2">
+                    $<span id="deposite-balance">00</span>
+                </h3>
+            </div>
+            
+            <div class="bg-red-400 rounded-md py-2 md:py-4 px-2 md:px-6">
+                <h1 class="text-sm md:text-xl font-normal md:font-semibold">
+                    Withdraw
+                </h1>
+                <h3 class="text-lg md:text-5xl font-light md:font-normal md:py-2">
+                    $<span id="withdraw-balance">00</span>
+                </h3>
+            </div>
+
+            <div class="bg-blue-400 rounded-md py-2 md:py-4 px-2 md:px-6">
+                <h1 class="text-sm md:text-xl font-normal md:font-semibold">
+                    Balance
+                </h1>
+                <h3 class="text-lg md:text-5xl font-light md:font-normal md:py-2">
+                    $<span id="remain-balance">00</span>
+                </h3>
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5 mx-auto w-9/12 py-2 md:py-5 text-white">
+            
+            <div class="bg-teal-400 rounded-md py-2 md:py-6 px-2 md:px-6">
+                <h1 class="text-sm md:text-xl font-normal md:font-semibold">
+                    Do Deposite
+                </h1>
+                <input class="w-3/5 my-2 md:my-4 py-1 md:py-2 px-1 md:px-4 rounded-md text-gray-900 text-lg" type="text" placeholder="Enter Deposite Ammount.....">
+                <button id="btn-deposite" class="bg-amber-400 font-semibold block py-1 md:py-2 px-2 md:px-5 rounded-md" type="submit">Submit</button>
+            </div>
+            
+            <div class="bg-sky-400 rounded-md py-2 md:py-4 px-2 md:px-6">
+                <h1 class="text-sm md:text-xl font-normal md:font-semibold">
+                    Do Withdraw
+                </h1>
+                <input class="w-3/5 my-2 md:my-4 py-1 md:py-2 px-1 md:px-4 rounded-md text-gray-900 text-lg" type="text" placeholder="Enter Withdraw Ammount.....">
+                <button id="btn-deposite" class="bg-amber-400 font-semibold block py-1 md:py-2 px-2 md:px-5 rounded-md" type="submit">Submit</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
